@@ -1,8 +1,16 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 @font-face {
     font-family: 'Oswald regular';
     src: url(../fonts/ofont.ru_Oswald.ttf);
 }
-
+.page-title{
+    font-family: 'Oswald regular';
+    text-transform: uppercase;
+    margin-top: 3em;
+}
 .img-wrapper::after{
     content: "";
     position: absolute;
@@ -44,17 +52,16 @@
 }
 
 .icon__achievements{
-    width: 50%;
+    width: 40%;
     height: auto;
 }
 /* .icon__achievements-container{
     text-align: center;
 } */
-.achievements__container{
+.achievements__container, .achievements__container1{
     background-color: #F7F7F7;
     padding: 5%;
     text-align: center;
-    margin-top: -10%;
     z-index: 5;
 }
 .achievements__container h1{
@@ -64,19 +71,19 @@
 .achievements__container p{
     color: #999999;
 }
-.translate-middle{
-    transform: translate(0%, 50%) !important;
-}
+
 
 
 
 
 
 /* carousel */
-.card{
+.current__projects-slider .card{
     margin: .7em;
     position: relative;
+    display: block;
 }
+
 .slider{
     display: flex !important;
     align-items: flex-start;
@@ -133,8 +140,8 @@
 .slick-next{
     background-image: url(../images/icons/arrow.png);
     background-size: 40px;
-    right: 0;
-    transform: translate(40px, -0px);
+    right:0;
+    transform: translate(0px, -0px);
 
 }
 .slick-prev{
@@ -142,7 +149,7 @@
     /* transform: rotate(180deg); */
     background-size: 40px;
     left: 0;
-    transform: translate(-40px, 0);
+    transform: translate(0px, 0);
 
 }
 button{
@@ -161,6 +168,10 @@ button{
 .current__projects{
     margin-top: 20%;
     margin-bottom: 5%;
+}
+
+.current__projects-cards-container{
+    text-decoration: none;
 }
 
 .current__projects h1{
@@ -194,14 +205,14 @@ button{
     padding-top: 2em;
     padding-bottom: 2em;
 }
-.contacts__title{
+.contact__title{
     color: #fff;
     font-family: 'Oswald regular';
-    font-size: 38px;
+    /* font-size: 38px; */
     text-transform: uppercase;
     margin: 0;
 }
-.contacts__text{
+.contact__text{
     color: #fff;
     margin: 5px 0;
     font-family: 'Oswald regular';
@@ -228,7 +239,7 @@ button{
 }
 .services__title{
     text-align: center;
-    font-size: 38px;
+    /* font-size: 38px; */
     text-transform: uppercase;
     color: #333;
 }
@@ -249,12 +260,12 @@ button{
     font-size: 16px;
     text-transform:uppercase;
 }
-.services__card-container:first-child{
+/* .services__card-container:first-child{
     margin-left: 0;
 }
 .services__card-container:last-child{
     margin-right: 0;
-}
+} */
 .services__icon-container{
     width: 60%;
     margin: 1em auto;
@@ -274,22 +285,25 @@ button{
     width: 100%;
     object-fit: cover;
     overflow: hidden;
-
+}
+.our-projects a{
+    display: block;
 }
 .our-projects__description-container{
     padding: 1em;
     background-color: #fff;
-    text-align: center;
+    text-align: center; 
+    color:#333
 }
 .our-projects__carousel-card{
     box-shadow: 0px 8px 19px 0px rgba(0,0,0,0.1);
     text-decoration: none;
     color: #F7654A;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 .our-projects__title{
     font-family: 'Oswald regular';
-    font-size: 38px;
+    /* font-size: 38px; */
     text-transform: uppercase;
     text-align: center;
 
@@ -303,25 +317,22 @@ button{
     --animate-duration: 2s;
   }
 
-
-
-
-
 .our-partners{
     background-color:#404149;
-    margin: 5em 0;
+    margin: 2em 0;
     padding: 1em;
 }
 
 .our-partners__title{
     font-family: 'Oswald regular';
-    font-size: 38px;
+    /* font-size: 38px; */
     color: #fff;
     text-transform: uppercase;
     text-align: center;
 }
 .our-partners__carousel-card{
     margin: 0 1em;
+    margin: auto;
 }
 
 
@@ -334,9 +345,9 @@ button{
 
 .benefits__title{
     font-family: 'Oswald regular';
-    font-size: 38px;
+    /* font-size: 38px; */
     text-align: center;
-    color: #F7654A;
+    color: #333;
     text-transform: uppercase;
 }
 
@@ -350,15 +361,16 @@ button{
     box-shadow: 3px 21px 25px -13px rgba(0,0,0,0.2);
 
 }
-.benefits__card-container:first-child{
+/* .benefits__card-container:first-child{
     margin-left: 0;
 }
 .benefits__card-container:last-child{
     margin-right: 0;
-}
+} */
 .benefits__item{
     font-family: 'Oswald regular';
 }
+
 .benefits__item-title{
     font-size: 30px;
     text-transform: capitalize;
@@ -381,3 +393,514 @@ button{
     color: #e7e7e7;
 }
 
+
+.contacts__title{
+    font-family: 'Oswald regular';
+    /* font-size: 38px; */
+    color: #333;
+    text-align: center;
+}
+
+.contacts__container{
+    margin: 4em 0 0 3em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.contacts__info-title{
+    color: #999999;
+
+}
+
+.footer{
+    font-family: 'Oswald regular';
+    background-color: #404149;
+    padding: 1.5em 0;
+    color: #fff;
+}
+.footer .align-item-center{
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width:1801px) and (max-width:2000px){
+   
+    .our-projects__carousel-img-container{
+        height: 23em;
+    }
+}
+
+
+@media only screen and (min-width:1601px) and (max-width:1800px){
+   
+    .our-projects__carousel-img-container{
+        height: 20em;
+    }
+}
+@media only screen and (min-width:1451px) and (max-width:1600px){
+   
+    .our-projects__carousel-img-container{
+        height: 17em;
+    }
+}
+@media only screen and (min-width:1301px) and (max-width:1450px){
+   
+    .our-projects__carousel-img-container{
+        height: 17em;
+    }
+}
+@media only screen and (min-width:1124px) and (max-width:1300px){
+   
+    .our-projects__carousel-img-container{
+        height: 13em;
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1124px){
+    /* .achievements__container{
+        transform: translate(0%, 40%);
+    } */
+    .our-projects__carousel-img-container{
+        height: 8em;
+    }
+}
+
+@media only screen and (min-width:360px) and (max-width:992px){
+    
+    .title{
+        font-size: 38px;
+        text-align: center;
+    }
+    .current__projects-cards-container h4{
+        font-size: 16px;
+    }
+    .current__projects-cards-container .card-text{
+        font-size: 14px;
+    }
+    .header__title{
+        margin: 11% auto;
+    }
+
+    .img{
+        height: 28em;
+    }
+    .our-projects__carousel-img-container{
+        height: 6em;
+    }
+    .our-projects__carousel-card{
+        font-size:15px;
+    }
+   
+}
+@media only screen and (min-width:1024px) and (max-width:1250px){
+    .our-projects__carousel-img-container{
+        height: 12em;
+    }
+    .benefits__card-container{
+        width: 12em;
+    }
+
+}
+@media only screen and (min-width:810px) and (max-width:1024px){
+    .our-projects__carousel-img-container{
+        height: 10em;
+    }
+    .benefits__card-container{
+        width: 10em;
+    }
+}
+@media only screen and (min-width:710px) and (max-width:810px){
+    .our-projects__carousel-img-container{
+        height: 10em;
+    }
+}
+@media only screen and (min-width:587px) and (max-width:709px){
+    .our-projects__carousel-img-container{
+        height: 16em;
+    }
+}
+@media only screen and (min-width:420px) and (max-width:587px){
+    .our-projects__carousel-img-container{
+        height: 14.6em;
+    }
+    .benefits__card-container{
+        width: 14em;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:420px){
+    .our-projects__carousel-img-container{
+        height: 12em;
+    }
+    .our-partners{
+        margin-top: 2em;
+    }
+    h3{
+        font-size: 24px !important;
+    }
+    .benefits__card-container{
+        width: 14em;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:2001px) and (max-width:3000px){
+    .achievements__container{
+        transform: translate(0, 55%);
+    }
+    .image-container{
+        margin-bottom: 10em;
+    }
+    .icon__achievements-container{
+        width: 100%;
+    }
+    .icon__achievements{
+        width: 50%;
+    }
+}
+@media only screen and (min-width:1600px) and (max-width:2000px){
+    .achievements__container{
+        transform: translate(0, 10%);
+    }
+    .image-container{
+        margin-bottom: 16em;
+    }
+    .icon__achievements{
+        width: 45%;
+    }
+}
+
+
+@media only screen and (min-width:1400px) and (max-width:1600px){
+    .achievements__container{
+        transform: translate(0, 20%);
+    }
+    .image-container{
+        margin-bottom: 14em;
+    }
+    .icon__achievements{
+        width: 45%;
+    }
+    
+}
+@media only screen and (min-width:1251px) and (max-width:1400px){
+    .achievements__container{
+        transform: translate(0, 25%);
+    }
+    .image-container{
+        margin-bottom: 13em;
+    }
+
+}
+
+@media only screen and (min-width:1271px) and (max-width:2500px){
+    .main-project__second-block{
+        justify-content: flex-end;
+    }
+    .main-project__img-slider-cont{
+        height: 16em;
+    }
+    
+    .main-project__img-cont{
+        height: 45em;
+    
+    }
+    
+    .img-wrapper{ height: 27em; }
+    .img-wrapper img{ height: 27em; }
+}
+
+/* @media only screen and (min-width:991px) and (max-width:1270px){
+    .main-project__second-block{
+        justify-content: flex-start;
+    }
+    .main-project__img-slider-cont{
+        height: 10em;
+    }
+    .main-project__img-cont{
+        height: 35em;
+    }
+    .image-container{
+        margin-bottom: 12em;
+    }
+    .achievements__container{
+        transform: translate(0, 10%);
+    }
+}
+
+@media only screen and (min-width:901px) and (max-width:990px){
+    .achievements__container{
+        transform: translate(0, 15%);
+    }
+    .image-container{
+        margin-bottom: 12em;
+    }
+
+}
+@media only screen and (min-width:768px) and (max-width:900px){
+    .achievements__container{
+        transform: translate(0, 20%);
+    }
+
+    
+
+    .icon__achievements-container{
+        width: 100%;
+        margin: auto;
+    }
+    .achievements__card-container {
+        margin-bottom: .5em;
+        padding-top:.5em;
+
+    }
+    .achievements__card-container:last-child{
+        border-bottom: none !important;
+        margin-bottom: 0em;
+
+    }
+    .image-container{
+        margin-bottom: 12em;
+    }
+    
+
+}
+
+@media only screen and (min-width:741px) and (max-width:767px){
+    .image-container{
+        margin-bottom: 32em;
+    }
+    .achievements__container{
+        transform: translate(0, 12%);
+    }
+}
+
+@media only screen and (min-width:651px) and (max-width:740px){
+    .image-container{
+        margin-bottom: 29em;
+    }
+    .achievements__container{
+        transform: translate(0, 12%);
+    }
+}
+@media only screen and (min-width:576px) and (max-width:650px){
+    .image-container{
+        margin-bottom: 26em;
+    }
+    .achievements__container{
+        transform: translate(0, 20%);
+    }
+
+    
+}
+@media only screen and (min-width:501px) and (max-width:575px){
+    .image-container{
+        margin-bottom: 44em;
+    }
+}
+@media only screen and (min-width:446px) and (max-width:500px){
+    .image-container{
+        margin-bottom: 38em;
+    }
+}
+@media only screen and (min-width:410px) and (max-width:445px){
+    .image-container{
+        margin-bottom: 35em;
+    }
+    .achievements__container h1{
+        margin: 2% 0 2% 0;
+
+    }
+    .achievements__card-container {
+        border-bottom: 1px solid grey !important;
+        margin-bottom: .5em;
+    }
+    .achievements__card-container:last-child{
+        border-bottom: none !important;
+        margin-bottom: 0em;
+
+    }
+    .icon__achievements-container{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width:360px) and (max-width:575px){
+    
+    .achievements__container{
+        transform: translate(0%, 8%);
+    }
+    
+    .achievements__container{
+        padding-top: 0;
+        padding-bottom: 0;
+        
+    }
+
+    .icon__achievements-container{
+        width: 70%;
+        margin: auto;
+    }
+    .achievements__card-container {
+        border-bottom: 1px solid grey !important;
+        margin-bottom: .5em;
+        padding-top:.5em;
+
+    }
+    .achievements__card-container:last-child{
+        border-bottom: none !important;
+        margin-bottom: 0em;
+
+    }
+    .achievements__container h1{
+        margin: 2% 0 2% 0;
+
+    }
+   
+}
+@media only screen and (min-width:480px) and (max-width:575px){
+    .image-container{
+        margin-bottom: 50em;
+    }
+}
+
+} */
+
+@media only screen and (min-width:1751px) and (max-width:1950px){
+    .achievements__container1{
+        transform: translate(0%, 20%);
+    }
+    .img-wrapper{
+        height: 37em;
+    }
+    .img-wrapper img{
+        height: 37em;
+    }
+}
+@media only screen and (min-width:1601px) and (max-width:1750px){
+    .achievements__container1{
+        transform: translate(0%, 30%);
+    }
+    .img-wrapper{
+        height: 37em;
+    }
+    .img-wrapper img{
+        height: 37em;
+    }
+}
+@media only screen and (min-width:1501px) and (max-width:1600px){
+    .achievements__container1{
+        transform: translate(0%, 25%);
+    }
+    .img-wrapper{
+        height: 35em;
+    }
+    .img-wrapper img{
+        height: 35em;
+    }
+}
+
+@media only screen and (min-width:1401px) and (max-width:1500px){
+    .achievements__container1{
+        transform: translate(0%, 30%);
+    }
+    .img-wrapper{
+        height: 35em;
+    }
+    .img-wrapper img{
+        height: 35em;
+    }
+}
+@media only screen and (min-width:1271px) and (max-width:1400px){
+    .achievements__container1{
+        transform: translate(0%, 5%);
+    }
+    .img-wrapper{
+        height: 30em;
+    }
+    .img-wrapper img{
+        height: 30em;
+    }
+}
+@media only screen and (min-width:1201px) and (max-width:1271px){
+    .achievements__container1{
+        transform: translate(0%, 50%);
+    }
+}
+@media only screen and (min-width:1125px) and (max-width:1200px){
+    .achievements__container1{
+        transform: translate(0%, 60%);
+    }
+}
+@media only screen and (min-width:990px) and (max-width:1124px){
+    .achievements__container1{
+        transform: translate(0%, 25%);
+    }
+}
+@media only screen and (min-width:840px) and (max-width:990px){
+    .achievements__container1{
+        transform: translate(0%, -10%);
+    }
+}
+
+@media only screen and (min-width:360px) and (max-width:410px){
+    
+    
+    .achievements__container1{
+        transform: translate(0%,0%);
+    }
+    .image-container1{
+        margin-bottom: 39em;
+    }
+
+}
