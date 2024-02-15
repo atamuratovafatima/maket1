@@ -6,6 +6,11 @@ html {
     font-family: 'Oswald regular';
     src: url(../fonts/ofont.ru_Oswald.ttf);
 }
+
+
+
+
+
 .page-title{
     font-family: 'Oswald regular';
     text-transform: uppercase;
@@ -255,10 +260,11 @@ button{
 
 .services__card-container{
     background-color: #F7F7F7;
-    margin: .5em;
     padding: 1.5em;
     font-size: 16px;
     text-transform:uppercase;
+    display: inline-block;
+    text-decoration: none;
 }
 /* .services__card-container:first-child{
     margin-left: 0;
