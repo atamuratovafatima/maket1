@@ -1,7 +1,7 @@
 window.onload = ()=>{
     // $(selector).countMe(delay,speed)
-    $("#num1").countMe(40,65);
-    $("#num2").countMe(30, 30);
-    $("#num3").countMe(40, 50);
-    $("#num4").countMe(100,200);
+    $("#num1").countMe(40, 200);
+    $("#num2").countMe(30, 200);
+    $("#num3").countMe(100, 5);
+    $("#num4").countMe(100,90);
  }

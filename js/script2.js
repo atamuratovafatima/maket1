@@ -5,8 +5,8 @@ $(document).ready(function(){
         arrows: false,
         dots:false,
         centerMode: true,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 1000,
         infinite: true,
         // centerMode: true,
         responsive: [
