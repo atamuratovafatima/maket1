@@ -10,7 +10,7 @@
 
 
 .form-select{
-    width: 30%;
+    width: 5em;
     margin-left:1em;
 }
 .form-select:focus {
@@ -959,6 +959,9 @@ button{
     .img{
         height: 32em;
     }
+    /* .form-select{
+        width: 20em;
+    } */
     .hamburger__menu-item a{
         display: inline;
         text-align: left;
@@ -1036,7 +1039,7 @@ button{
 
 @media only screen and (min-width:411px) and (max-width:767px){
     .trigger{
-        transform: translateX(-20%) translateY(-70%);
+        transform: translateX(-20%) translateY(-110%);
     }
     label ul{
         -webkit-transform: translate(-3%, 0%);
@@ -1062,6 +1065,15 @@ button{
     .achievements__container1{
         transform: translate(0%,30%);
     }
+    .form-select{
+        width: 15%;
+        margin-left: 1em;
+        transform: translateX(-15%) translateY(-85%);
+
+    }
+    .hamburger__menu-cont{
+        width: 12em;
+    }
 }
 @media only screen and (min-width:360px) and (max-width:410px){
 
@@ -1080,8 +1092,14 @@ button{
         font-size: 14px;
         letter-spacing: 1px;
     }
+    .form-select{
+        width: 20%;
+        margin-left: 1em;
+        transform: translateX(-15%) translateY(-85%);
+
+    }
     .trigger{
-        transform: translateX(-20%) translateY(-70%);
+        transform: translateX(-20%) translateY(-110%);
     }
  
     .logo-img{
@@ -1093,7 +1111,7 @@ button{
         text-align: left;
     }
     .hamburger__menu-cont{
-        width: 20em;
+        width: 12em;
     }
     .current__projects {
         margin-top: 32%;

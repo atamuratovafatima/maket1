@@ -112,6 +112,9 @@
         height: 45em;
     
     }
+    .current__projects-cards-container h4{
+        font-size: 20px;
+   }
     
     .img-wrapper{ height: 27em; }
     .img-wrapper img{ height: 27em; }
@@ -122,16 +125,28 @@
         justify-content: flex-start;
     }
     .main-project__img-slider-cont{
-        height: 10em;
+        height: 20em;
     }
+   .current__projects-cards-container h4{
+        font-size: 18px;
+   }
     .main-project__img-cont{
-        height: 35em;
+        height: 55em;
     }
     .image-container{
         margin-bottom: 12em;
     }
     .achievements__container{
         transform: translate(0, 10%);
+    }
+    .main-project__info-con .row{
+        display: flex;
+    }
+    .col-lg-6{
+        width: 100%;
+    }
+    .col-lg-6 img{
+        height: 100%;
     }
 }
 
@@ -142,6 +157,12 @@
     .image-container{
         margin-bottom: 12em;
     }
+    .main-project__img-slider-cont{
+        height: 20em;
+    }
+    .main-project__second-block{
+        justify-content: flex-start;
+    }
 
 }
 @media only screen and (min-width:768px) and (max-width:900px){
@@ -149,7 +170,9 @@
         transform: translate(0, 20%);
     }
 
-    
+    .main-project__img-slider-cont{
+        height: 20em;
+    }
 
     .icon__achievements-container{
         width: 100%;
@@ -179,6 +202,9 @@
     .achievements__container{
         transform: translate(0, 12%);
     }
+    .main-project__img-slider-cont{
+        height: 20em;
+    }
 }
 
 @media only screen and (min-width:651px) and (max-width:740px){
@@ -188,6 +214,9 @@
     .achievements__container{
         transform: translate(0, 12%);
     }
+    .main-project__img-slider-cont{
+        height: 20em;
+    }
 }
 @media only screen and (min-width:576px) and (max-width:650px){
     .image-container{
@@ -196,6 +225,10 @@
     .achievements__container{
         transform: translate(0, 20%);
     }
+    .main-project__img-slider-cont{
+        height: 17em;
+        width: 15em;
+    }
 
     
 }
@@ -203,15 +236,24 @@
     .image-container{
         margin-bottom: 44em;
     }
+    .main-project__img-slider-cont{
+        height: 15em;
+    }
 }
 @media only screen and (min-width:446px) and (max-width:500px){
     .image-container{
         margin-bottom: 38em;
     }
+    .main-project__img-slider-cont{
+        height: 15em;
+    }
 }
 @media only screen and (min-width:410px) and (max-width:445px){
     .image-container{
         margin-bottom: 35em;
+    }
+    .main-project__img-slider-cont{
+        height: 17em;
     }
     .achievements__container h1{
         margin: 2% 0 2% 0;
@@ -242,6 +284,9 @@
         padding-top: 0;
         padding-bottom: 0;
         
+    }
+    .main-project__img-slider-cont{
+        height: 17em;
     }
 
     .icon__achievements-container{
