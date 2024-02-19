@@ -25,17 +25,20 @@
                 <div class="row g-0">
                     <div class="col-lg-7 col-md-9 col-sm-10 m-auto">
                         <div class="row g-0 justify-content-between header__logo-container clearfix">
-                            <div class="col-lg-7 col-md-7 col-sm-12 m-auto">
+                            <div class="col-lg-7 col-md-7 col-sm-12 my-auto">
                                 <img src="./images/logo.png" alt="Logo CCG Civil Construcion Group" class="float-start logo-img">
                             </div>
                             <div class="col-lg-5 col-md-5 col-sm-12 position-relative m-auto">
                                 <div class="d-flex justify-content-end lang-menu-cont">
-                                    <select name="sources" id="sources" class="custom-select sources" placeholder="RU">
-                                        <option value="profile">UZ</option>
-                                        <option value="word">RU</option>
-                                    </select>
-                                    <div class="position-relative">
-                                        <label class="position-relative">
+                                    <div>
+                                        <select name="sources" id="sources" class="custom-select sources" placeholder="RU">
+                                            <option value="profile">UZ</option>
+                                            <option value="word">RU</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="position-relative mt-1">
                                             <input type="checkbox">
                                             <div class="trigger menu">
                                                 <span  class="hamburger">
@@ -46,11 +49,15 @@
                                                       </svg>
                                                 </span>
                                             </div>
-                                            <ul class="hamburger__menu-cont wow animate__fadeInRight">
-                                                <li class="hamburger__menu-item"> <a href="#projects">НАШИ ПРОЕКТЫ</a> </li>
-                                                <li class="hamburger__menu-item"> <a href="#offers">Наши услуги</a> </li>
-                                                <li class="hamburger__menu-item"> <a href="#contacts">Contacts</a> </li>
-                                            </ul>
+                                                <ul class="hamburger__menu-cont wow animate__fadeInRight position-relative">
+                                                    <div class="position-absolute">
+                                                        <li class="hamburger__menu-item   col-sm-12 col-xs-12"> <a href="#projects" class="mt-2">НАШИ ПРОЕКТЫ</a> </li>
+                                                        <li class="hamburger__menu-item   col-sm-12 col-xs-12"> <a href="#offers">Наши услуги</a> </li>
+                                                        <li class="hamburger__menu-item   col-sm-12 col-xs-12"> <a href="#contacts">Contacts</a> </li>
+                                                    </div>
+                                                    
+                                                </ul>
+                                            
                                         </label>
                                     </div>
                                     
@@ -62,30 +69,30 @@
                             <p class="text-uppercase title__description">стадионы, газопроводы, мосты, дамбы</p>
                         </div>
 
-                        <div class="achievements__container1 top-100 start-50">
-                            <div class="row g-0 d-flex justify-content-between">
-                                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                        <div class="achievements__container1">
+                            <div class="row g-0 d-flex justify-content-around">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-3 achievements__sm-flex">
                                     <div class="icon__achievements-container1">
                                         <img class="icon__achievements" src="./images/icons/4.png">
                                     </div>
                                     <h1 id="num1">5</h1>
                                     <p>Current projects</p>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-3 achievements__sm-flex">
                                     <div class="icon__achievements-container1">
                                         <img class="icon__achievements" src="./images/icons/8.png">
                                     </div>
                                     <h1 id="num2">8</h1>
                                     <p>Completed projects</p>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-3 achievements__sm-flex">
                                     <div class="icon__achievements-container1">
                                         <img class="icon__achievements" src="./images/icons/3.png">
                                     </div>
                                     <h1 id="num3">500</h1>
                                     <p>Work rooms</p>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-3 achievements__sm-flex">
                                     <div class="icon__achievements-container1">
                                         <img class="icon__achievements" src="./images/icons/6.png">
                                     </div>
@@ -187,23 +194,23 @@
                     <h3 class="services__title">Наши услуги</h3>
                     <div class="row m-auto wow animate__slideInLeft" data-wow-duration="2s">
                         <!-- d-flex flex-row justify-content-between align-items-stretch -->
-                        <a href="./offer.html" class="col-4 services__card-container align-self-stretch" >
+                        <a href="./offer.html" class="col-lg-4 col-md-12 col-sm-12 col-xs-12 services__card-container align-self-stretch" >
                             <div class="services__icon-container">
                                 <img src="./images/icons/2.png" class="services__icon" alt="Строительное проектирование">
                             </div>
                             <p class="service">Строительное проектирование</p>
                         </a>
-                        <a href="./offer.html"  class="col-4 services__card-container align-self-stretch">
+                        <a href="./offer.html"  class="col-lg-4 col-md-12 col-sm-12 col-xs-12 services__card-container align-self-stretch">
                             <div class="services__icon-container">
                                 <img src="./images/icons/3.png" class="services__icon" alt="Промышленное строительство">
                             </div>
                             <p class="service">Промышленное строительство</p>                                
                         </a>
-                        <a href="./offer.html" class="col-4 services__card-container align-self-stretch">
+                        <a href="./offer.html" class="col-lg-4 col-md-12 col-sm-12 col-xs-12 services__card-container align-self-stretch">
                             <div class="services__icon-container">
                                 <img src="./images/icons/1.png" class="services__icon" alt="Устройство инженерных систем и их виды и особенности">
                             </div>
-                            <p class="service">Устройство инженерных систем и их виды и особенности</p>                                
+                            <p class="service">Устройство инженерных систем и их виды и особенности Устройство инженерных систем и их виды и особенности</p>                                
                         </a>
                     </div>
                 </div>
@@ -212,8 +219,8 @@
         <div class="our-projects container-fluid mt-5 mb-5">
             <h3 class="our-projects__title mb-4">Наши проекты</h3>
             <div class="our-projects__carousel-container d-flex justify-content-evenly align-items-stretch">
-                <a href="./projects.html" class="our-projects__carousel-card align-self-stretch m-1">
-                    <div class="our-projects__carousel-img-container overflow-hidden">
+                <a href="./projects.html" class="our-projects__carousel-card m-1">
+                    <div class="our-projects__carousel-img-container overflow-hidden text-center">
                         <img src="./images/test/pexels-hatice-baran-17604370.jpg" alt="" class="our-projects__img">
                     </div>
                     <div class="our-projects__description-container d-flex align-item-center justify-content-center">
@@ -287,8 +294,8 @@
             <div class="row g-0">
                 <div class="col-lg-7 col-md-9 col-sm-12 m-auto ">
                     <h3 class="benefits__title mb-4 mt-2">Advantages of working with CCG</h3>
-                    <div class="row d-flex justify-content-evenly align-items-stretch m-auto benefits__items-container">
-                        <div class="col-lg-3 col-md-4 col-sm-6 benefits__card-container align-self-stretch">
+                    <div class="row benefits__items-container">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mx-auto benefits__card-container align-self-stretch">
                             <div class="benefits__number-container">
                                 <p>01</p>
                             </div>
@@ -297,39 +304,39 @@
                                 <p class="benefits__text">We ensure the safety work.</p>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 benefits__card-container align-self-stretch">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mx-auto benefits__card-container align-self-stretch">
                             <div class="benefits__number-container">
                                 <p>02</p>
                             </div>
                             <div class="benefits__item">
-                                <h4 class="benefits__item-title">Cost efficiency</h4>
+                                <h4 class="benefits__item-title overflow-hidden">Cost efficiency Cost efficiency Cost efficiency</h4>
                                 <p class="benefits__text">We provide quality work for a reasonable cost.</p>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 benefits__card-container align-self-stretch">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mx-auto benefits__card-container align-self-stretch">
                             <div class="benefits__number-container">
                                 <p>03</p>
                             </div>
                             <div class="benefits__item">
-                                <h4 class="benefits__item-title">Highly qualified team</h4>
+                                <h4 class="benefits__item-title overflow-hidden">Highly qualified team</h4>
                                 <p class="benefits__text">Our construction team consist of highly experienced perofessionals</p>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 benefits__card-container align-self-stretch">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mx-auto benefits__card-container align-self-stretch">
                             <div class="benefits__number-container">
                                 <p>04</p>
                             </div>
                             <div class="benefits__item">
-                                <h4 class="benefits__item-title">Economy of time</h4>
+                                <h4 class="benefits__item-title overflow-hidden">Economyoftimmyoftimmyoftimmyoftim</h4>
                                 <p class="benefits__text">We always do our work on time</p>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 benefits__card-container align-self-stretch">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mx-auto benefits__card-container align-self-stretch">
                             <div class="benefits__number-container">
                                 <p>05</p>
                             </div>
                             <div class="benefits__item">
-                                <h4 class="benefits__item-title">Quality</h4>
+                                <h4 class="benefits__item-title overflow-hidden">Quality</h4>
                                 <p class="benefits__text">We have extensive exrerience in industrial, civil construction</p>
                             </div>
                         </div>
@@ -384,9 +391,9 @@
         </div>
         <div class="row footer g-0">
             <div class="col-lg-7 col-md-9 col-sm-12 m-auto">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <p class="align-item-center">© 2024 Строительная компания</p>
-                    <p class="align-item-center">Аутсорсинговая компания</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="align-item-center pl-2">© 2024 Строительная компания</p>
+                    <p class="align-item-center pr-2">Аутсорсинговая компания</p>
                 </div>
             </div>
         </div>
