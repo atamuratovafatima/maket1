@@ -1,4 +1,6 @@
-
+body{
+    overflow-x: hidden;
+}
 /* html {
     scroll-behavior: smooth;
   } */
@@ -660,7 +662,7 @@ button{
 .footer{
     font-family: 'Oswald regular';
     background-color: #404149;
-    padding: 1.5em 0;
+    padding: 1.5em 20px;
     color: #fff;
 }
 .footer .align-item-center{
